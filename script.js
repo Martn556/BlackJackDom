@@ -57,11 +57,10 @@ function shuffleDeck(deck) {
     }
     return output;
 }
-setUpDeck(deck); //this puts the return statment in deck
+setUpDeck(deck);
 shuffleDeck(deck);
 
-console.log(deck);
-// console.log(shuffleDeck(deck));
+console.log(deck[0][0][0]);
 
 
 

@@ -15,11 +15,37 @@ function getRandomArbitrary(min, max) {
 // make a slot machine too
 
 
-const arrTest = ["a", "b", "c"];
-console.log(arrTest[3]);
+// console.log(arrTest[3]);
 
 // console.log(arrTest.splice(-1, 1));
 
 
 // console.log(Math.floor(Math.random() * ((-2 + 1) - 0) + 0));
+
+
+
+function carSolution(array, end) {
+    let allElms = 0;
+
+
+    let output = [];
+    for (let i = 0; i < array.length; i++) {
+        output.push(array[i]);
+    }
+
+    let i = 0;
+    while (allElms < end) {
+        allElms += output[i];
+        if (allElms < end) {
+            output.splice(i, 1);
+        }
+    }
+    return output;
+}
+
+console.log(carSolution([4, 6, 7, 8], 12));
+
+// const arrTest = ["a", "b", "c"];
+// arrTest.splice(1, 1);
+// console.log(arrTest);
 
