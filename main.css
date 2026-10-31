@@ -11,7 +11,9 @@
     border: .15cqi solid #00000014;
     width: 7em;
     border-radius: 8px;
+    /* color: red; */
 }
+
 
 .Card h1 {
     /* padding-top: 10px; */
@@ -19,6 +21,7 @@
     padding-left: 15px;
 }
 
-.Card h2,h3 {
+.Card h2,
+h3 {
     padding-left: 10px;
 }
